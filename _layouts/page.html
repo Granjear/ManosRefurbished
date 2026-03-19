@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Zoho Sites 1.0, http://zoho.com/sites" />
+    <title>{{ page.title }}</title>
+    <meta name="keywords" content="{{ page.keywords }}" />
+    <meta name="description" content="{{ page.description }}" />
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:url" content="http://manosalatierra.zohosites.com/{{ page.url | remove: '/' }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <link href="theme/content_style.css" rel="stylesheet" type="text/css" />
+    <link href="theme/style.css" rel="stylesheet" type="text/css" />
+    <link href="theme/contentreset_style.css" type="text/css" rel="stylesheet" />
+    <script>var ZS_ColumnFix=false;var responsiveTheme=false;var ZS_FormAppName="manos-a-la-tierra-660298368"</script>
+    <!--[if gt IE 8]><script>ZS_ColumnFix=true</script><script src="js/json2.js"></script><![endif]-->
+    <script src="js/commonUtils.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/navigation.js"></script>
+    <script>var ZS_adjustHeight=false;var ZS_PublishMode = true; var ZS_MobileVer = false;</script>
+</head>
+<body>
+<div class="patternBG">
+  <div class="page-width mainDiv">
+    <div class="bannerArea"> 
+      <div class="bannerImage">
+        <div style="position:relative;width:920px; height:325px;overflow:hidden;z-index:0">
+          <img id="zpBannerBg" class="" style="position: absolute; top: -144px; left: 0px; width: 920px; height: auto; opacity: 1;" src="files/huerta3.png" width="920px" onload="fnSetBannerImg(this,0,0)" />
+        </div>
+      </div>
+    </div>
+    <div class="contentContainerInner">
+      <div class="leftArea floatLeft">
+        <div class="leftAreaInner">
+          <div class="topArea"> 
+            <div class="sitenameLogoContainer"> 
+              <div class="logoArea"><a href="/"><img id="zpLogo" src="files/logo-lw-scaled.png" width="100px" /></a></div>
+              <h1 id="zpSitename">Manos a la Tierra</h1>
+            </div>
+            <div class="menuArea">
+              {% include nav.html %}
+            </div>
+            <div class="thumbnailArea" style="text-align: center; padding: 20px 10px; border-top: 1px solid #333;">
+              <a href="javascript:void(0)" onclick="openLightbox('files/infografia%2011-2-2026.jpeg')" style="text-decoration: none;">
+                <img src="files/infografia%2011-2-2026.jpeg" style="width: 150px; border: 2px solid #ff9328; border-radius: 5px; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" alt="Infografía" />
+                <p style="color: white !important; padding-top: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">&nbsp;Infografía</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="lightbox" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); cursor: default; overflow: hidden; align-items: center; justify-content: center;">
+        <span onclick="closeLightbox()" style="position: absolute; top: 20px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer; z-index: 10000;">&times;</span>
+        
+        <!-- Zoom Controls -->
+        <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 10000; background: rgba(0,0,0,0.5); padding: 10px; border-radius: 10px; display: flex; gap: 15px;">
+          <button onclick="zoom(0.2)" style="background: #ff9328; border: none; color: white; padding: 5px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 20px;">+</button>
+          <button onclick="zoom(-0.2)" style="background: #ff9328; border: none; color: white; padding: 5px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 20px;">-</button>
+          <button onclick="resetZoom()" style="background: #555; border: none; color: white; padding: 5px 15px; border-radius: 5px; cursor: pointer; font-weight: bold;">Reset</button>
+        </div>
+
+        <div id="lightboxContainer" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; cursor: grab;">
+          <img id="lightboxImg" src="" style="max-width: 90%; max-height: 90%; transition: transform 0.1s; border: 3px solid #ff9328; border-radius: 5px; user-select: none; -webkit-user-drag: none;" />
+        </div>
+      </div>
+
+      <script>
+      let zoomLevel = 1;
+      let isDragging = false;
+      let startX, startY, initialX = 0, initialY = 0;
+
+      function openLightbox(src) {
+        const lightbox = document.getElementById('lightbox');
+        const img = document.getElementById('lightboxImg');
+        img.src = src || 'files/infografia%2011-2-2026.jpeg';
+        lightbox.style.display = 'flex';
+        resetZoom();
+      }
+
+      function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+      }
+
+      function zoom(amount) {
+        zoomLevel = Math.max(0.5, Math.min(5, zoomLevel + amount));
+        applyTransform();
+      }
+
+      function resetZoom() {
+        zoomLevel = 1;
+        initialX = 0;
+        initialY = 0;
+        applyTransform();
+      }
+
+      function applyTransform() {
+        const img = document.getElementById('lightboxImg');
+        img.style.transform = `translate(${initialX}px, ${initialY}px) scale(${zoomLevel})`;
+        const container = document.getElementById('lightboxContainer');
+        container.style.cursor = zoomLevel > 1 ? 'grab' : 'default';
+      }
+
+      const container = document.getElementById('lightboxContainer');
+      const img = document.getElementById('lightboxImg');
+
+      container.onmousedown = function(e) {
+        if (zoomLevel <= 1) return;
+        isDragging = true;
+        container.style.cursor = 'grabbing';
+        startX = e.clientX - initialX;
+        startY = e.clientY - initialY;
+      };
+
+      window.onmousemove = function(e) {
+        if (!isDragging) return;
+        initialX = e.clientX - startX;
+        initialY = e.clientY - startY;
+        applyTransform();
+      };
+
+      window.onmouseup = function() {
+        isDragging = false;
+        container.style.cursor = zoomLevel > 1 ? 'grab' : 'default';
+      };
+
+      // Close on background click (excluding image and controls)
+      document.getElementById('lightbox').onclick = function(e) {
+        if (e.target.id === 'lightbox' || e.target.id === 'lightboxContainer') {
+          closeLightbox();
+        }
+      };
+      </script>
+      
+      <div class="rightArea floatLeft">
+        <div class="rightAreaInner" style="width:100%"> 
+          <div class="contentAreaSpace">
+            <div id="page-container" class="zpcontent-wrapper">
+              {{ content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

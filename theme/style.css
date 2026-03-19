@@ -1,0 +1,1617 @@
+/*--------------------------------------------------------------- PRESET CSS -------------------------------------------------------------------------------*/
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+body {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color:#5c5c5c;
+ background-color:#8ab64c;
+ background-image:url(images/bodybg.png);
+ background-position:left top;
+ background-repeat:repeat-x;
+ background-attachment:scroll;
+ background-size:auto;
+}
+h1 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:24px;
+color:#076148;
+}
+h2 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:22px;
+color:#076148;
+}
+h3 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:20px;
+color:#076148;
+}
+h4 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:18px;
+color:#076148;
+}
+h5 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:16px;
+color:#076148;
+}
+h6 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:14px;
+color:#076148;
+}
+a {
+ text-decoration:none;
+color:#ff9328;
+}
+a:hover {
+text-decoration:none;
+color:#ff9328;
+}
+a img {
+    border: 0 solid;
+}
+:focus {
+    outline: none;
+}
+p {
+    line-height: 1.4;
+}
+ul, ol {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+li {
+    margin: 0;
+    padding: 0 0 10px;
+}
+ol {
+    padding-left: 23px;
+}
+hr {
+    border-top: 1px solid #e8e8e8
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#ebf5e0;
+ border-width:1px;
+ border-style:solid;
+ border-color:#d7eabf;
+ color:#076148;
+ padding:6px;
+}
+td {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#FFFFFF;
+ border-width:1px;
+ border-style:solid;
+ border-color:#d7eabf;
+ color:#5c5c5c;
+ padding:6px;
+}
+/*--------------------------------------------------------------- COMMON USAGE CSS -------------------------------------------------------------------------------*/
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+.clearDiv {
+    clear: both;
+}
+.page-width {
+    width: 920px;
+    margin: 0 auto;
+}
+.patternBG {
+ background-image:url(images/leafimage.png);
+ background-position:center top;
+ background-repeat:no-repeat;
+ background-color: transparent;
+ background-attachment:scroll;
+ background-size:auto;
+}
+.mainDiv {
+ background-color:#ffffff;
+ background-image:none;
+ background-position:0 0;
+ background-repeat:repeat;
+ background-attachment:scroll;
+ background-size:auto;
+ box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0px 0px transparent inset;
+ -webkit-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0px 0px transparent inset;
+ -moz-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0px 0px transparent inset;
+ -o-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0px 0px transparent inset;
+ border-width: 0;
+ border-style:none;
+ border-color:transparent;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+    overflow: hidden;
+}
+/*--------------------------------------------------------------- BANNER AREA CSS -----------------------------------------------------------------------------*/
+.bannerArea {
+    width: 920px;
+    height: 325px;
+}
+.bannerImage img {
+    display: block;
+}
+.contentAreaSpace {
+    min-height: 400px;
+    height: auto !important;
+    height: 400px;
+}
+.contentContainerInner {
+    padding: 30px;
+}
+/*--------------------------------------------------------------- TOP AREA CSS -----------------------------------------------------------------------------*/
+.leftArea {
+    width: 33%;
+}
+.leftAreaInner {
+    padding: 0 30px 0 0;
+    margin-top: -300px;
+    min-height: 350px;
+}
+.topArea {
+    background: #1e1e1e;
+    overflow: hidden;
+    position: relative;
+}
+.logoArea {
+    padding: 10px 0 5px;
+}
+.sitenameLogoContainer {
+    text-align: center;
+}
+.sitenameLogoContainer h1 {
+ color:#ffffff;
+ font-size:30px;
+ font-family:Georgia, "Times New Roman", Times, serif;
+    word-wrap: break-word;
+    font-weight: normal;
+    padding: 5px;
+}
+.sitenameLogoContainer h5 {
+ color:#ffffff;
+ font-size:14px;
+ font-family:Georgia, "Times New Roman", Times, serif;
+    word-wrap: break-word;
+    font-weight: normal;
+    font-style: italic;
+    padding: 5px 5px 10px;
+}
+/*--------------------------------------------------------------- MENU AREA CSS ----------------------------------------------------------------------------*/
+#navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1px;
+    line-height: 0;
+}
+#navigation li {
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+ background-color:#ff9328;
+ background-image:none;
+background-repeat:repeat-x;
+background-position:left top;
+    border-bottom: 1px solid #ee8116;
+}
+#navigation li a {
+    text-decoration: none;
+ color:#1e1e1e;
+    display: block;
+    line-height: 1.5;
+    float: left;
+ font-size:12px;
+    width: 100%;
+ font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    curser: pointer;
+}
+#navigation li a:hover, #navigation li.selected a, #navigation li.active a {
+ color:#010101;
+ background-color:#ffcb34;
+ background-image:none;
+background-repeat:repeat-x;
+background-position:left top;
+}
+#navigation li a span {
+    width: 83%;
+    float: left;
+    padding: 10px 0 10px 15px;
+    word-wrap: break-word;
+}
+#navigation li a em {
+    width: 10px;
+    float: left;
+    height: 10px;
+}
+#navigation li.navArrow a em {
+    background: transparent url(images/navArrow.png) no-repeat scroll center left;
+    float: left;
+    height: 10px;
+    width: 10px;
+    margin-top: 14px;
+    margin-left: 5px;
+}
+/*--------------------------------------------------------- SUBMENU AREA CSS -----------------------------------------------------------------------------*/
+.submenu {
+ border-width:1px;
+border-style:solid;
+border-color:#ee8116;
+ border-radius:0px;
+-moz-border-radius:0px;
+-webkit-border-radius:0px;
+-o-border-radius:0px;
+ font-family:Arial, Helvetica, sans-serif;
+    width: 200px;
+    position: absolute;
+    display: block;
+    -webkit-transition: width 0.5s ease 0s;
+    -moz-transition: width 0.5s ease 0s;
+    -o-transition: width 0.5s ease 0s;
+    -ms-transition: width 0.5s ease 0s;
+    transition: width 0.5s ease 0s;
+}
+.submenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1px;
+    line-height: 0;
+}
+.submenu li {
+ background-color:#ff9328;
+background-image:none;
+background-position:top left;
+background-repeat:repeat;
+    display: block;
+    border-bottom: 1px solid #ee8116;
+    padding: 0;
+    overflow: hidden;
+}
+.submenu li a {
+ color:#000000;
+ font-size:12px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    line-height: 1.7;
+    float: left;
+    padding: 8px 0;
+    cursor: pointer;
+}
+.submenu li a:hover {
+ color:#000000;
+background-color:#ffcb34;
+background-image:none;
+background-position:top left;
+background-repeat:repeat;
+}
+.submenu li a span {
+    width: 180px;
+    float: left;
+    padding-left: 5px;
+    word-wrap: break-word;
+}
+.submenu li a em {
+    width: 10px;
+    float: left;
+    height: 10px;
+}
+.submenu li.navArrow a em {
+    background: transparent url(images/navArrow.png) no-repeat scroll center left;
+    float: left;
+    height: 10px;
+    width: 10px;
+    margin-top: 5px;
+}
+/*--------------------------------------------------------- SIDEBAR AREA CSS -----------------------------------------------------------------------------*/
+.sidebarArea {
+ background-color:#F4F4F4;
+ background-image:none;
+ background-position:0 0;
+ background-repeat:no-repeat;
+ background-attachment:scroll;
+ background-size:auto;
+ box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0 0 transparent inset;
+ -webkit-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0 0 transparent inset;
+ -moz-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0 0 transparent inset;
+ -o-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0 0 transparent inset;
+ border-width: 0;
+ border-style:none;
+ border-color:transparent;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+    padding: 20px 10px;
+    margin: 5px 0 20px;
+    position: relative;
+ font-family: Arial, Helvetica, sans-serif;
+ color:#5C5C5C;
+ font-size:12px;
+}
+.sidebarArea h1 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:24px;
+ color:#076148;
+}
+.sidebarArea h2 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:22px;
+ color:#076148;
+}
+.sidebarArea h3 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:20px;
+ color:#076148;
+}
+.sidebarArea h4 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:18px;
+ color:#076148;
+}
+.sidebarArea h5 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:16px;
+ color:#076148;
+}
+.sidebarArea h6 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:14px;
+ color:#076148;
+}
+.sidebarArea a {
+ text-decoration:none;
+ color:#FF9328;
+}
+.sidebarArea a:hover {
+ text-decoration:none;
+ color:#FF9328;
+}
+.sidebarArea form li span input[type=text], .sidebarArea form li span textarea, .sidebarArea form li span select {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color:#5C5C5C;
+    width: 180px;
+    background: #ffffff;
+    border-color: #ECECEC;
+}
+.sidebarArea form li span select {
+    width: 193px;
+}
+.sidebarArea form li input[type=submit], .sidebarArea form li input[type=reset] {
+    font-family:Arial, Helvetica, sans-serif
+}
+.sidebarcontentSpace {
+    min-height: 300px;
+    height: auto !important;
+    height: 300px;
+}
+.sidebarcontentSpace form ul li label, .sidebarcontentSpace form ul li div {
+    float: none;
+    padding: 5px 0;
+}
+.sidebarcontentSpace th {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#ebf5e0;
+ border-width:1px;
+ border-style:solid;
+ border-color:#d7eabf;
+ color:#076148;
+ padding:6px;
+}
+.sidebarcontentSpace td {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#FFFFFF;
+ border-width:1px;
+ border-style:solid;
+ border-color:#d7eabf;
+ color:#5c5c5c;
+ padding:6px;
+}
+.sidebarcontentSpace .zs-highlight-box {
+ background-color: #ffcb34;
+ background-image: none;
+ background-image: none, -moz-linear-gradient(bottom, transparent, transparent);
+ background-image: none, -webkit-linear-gradient(bottom, transparent, transparent);
+ background-image: none, -o-linear-gradient(bottom, transparent, transparent);
+ background-position: top left;
+ background-repeat: no-repeat;
+ box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.17), 0px 0px 0px 2px #fab52b inset;
+ -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.17), 0px 0px 0px 2px #fab52b inset;
+ -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.17), 0px 0px 0px 2px #fab52b inset;
+ -o-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.17), 0px 0px 0px 2px #fab52b inset;
+ border-width: 2px;
+ border-style:solid;
+ border-color:#ffffff;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+ padding: 10px;
+ margin: 10px;
+    min-height: 100px;
+ font-family: Arial, Helvetica, sans-serif;
+ color:#FFFAEC;
+ font-size:12px;
+}
+.sidebarArea .zs-highlight-box h1 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:24px;
+ color:#FF5200;
+}
+.sidebarArea .zs-highlight-box h2 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:22px;
+ color:#FF5200;
+}
+.sidebarArea .zs-highlight-box h3 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:20px;
+ color:#FF5200;
+}
+.sidebarArea .zs-highlight-box h4 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:18px;
+ color:#FF5200;
+}
+.sidebarArea .zs-highlight-box h5 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:16px;
+ color:#FF5200;
+}
+.sidebarArea .zs-highlight-box h6 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:14px;
+ color:#FF5200;
+}
+.sidebarArea .zs-highlight-box a {
+ text-decoration:none;
+ color:#FF5200;
+}
+.sidebarArea .zs-highlight-box a:hover {
+ text-decoration:none;
+ color:#FF5200;
+}
+.sidebarArea .zs-highlight-box th {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#FFC23F;
+ border-width:1px;
+ border-style:solid;
+ border-color:#FFB20B;
+ color:#FFF8E5;
+ padding:6px;
+}
+.sidebarArea .zs-highlight-box td {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#FFFFFF;
+ border-width:1px;
+ border-style:solid;
+ border-color:#E9E9E9;
+ color:#5c5c5c;
+ padding:6px;
+}
+.sidebarArea .zs-highlight-box form li span input[type=text], .sidebarArea .zs-highlight-box form li span textarea, .sidebarArea .zs-highlight-box form li span select {
+    background: #FFBE00;
+    border-color: #FFD600;
+    color: #B87D08;
+    width: 135px;
+}
+.sidebarArea .zs-highlight-box form li span select {
+    width: 148px;
+}
+/*----------------------------------- THEME SIDEBAR AREA HIGHLIGHT BOX NEWSLETTER CSS -----------------------------------------------*/
+
+.sidebarArea .zs-highlight-box .newsletter-input-field {
+    width:165px;
+}
+.sidebarArea .zs-highlight-box .newsletter-layout-3 .newsletter-form {
+    width: 165px;
+}
+.sidebarArea .zs-highlight-box h3.newsletter-heading {
+    color:#FF5200;
+}
+.sidebarArea .zs-highlight-box .newsletter-desc {
+    color:#FFFAEC;
+}
+.sidebarArea .zs-highlight-box .newsletter-input-field {
+    color: #FFFAEC;
+    background: #FFBE00;
+    border: 1px solid #FFD600;
+}
+.sidebarArea .zs-highlight-box .newsletter-form input[type="text"]::-moz-placeholder {
+    color:#ffecb6;
+}
+.sidebarArea .zs-highlight-box .newsletter-form  input[type="text"]::-webkit-input-placeholder{
+    color:#ffecb6;
+}
+.sidebarArea .zs-highlight-box .newsletter-form  input[type="text"]:-ms-input-placeholder {
+    color:#ffecb6;
+}
+.sidebarArea .zs-tabs-accordion-content .newsletter-input-field {
+    width: 165px;
+}
+.sidebarArea .zs-tabs-accordion-content .newsletter-layout-3 .newsletter-form {
+    width: 165px;
+}
+/*-----------------------------------  TEXT HIGHLIGHT CSS -----------------------------------------------*/
+.sidebarArea .zs-text-light-color {
+color:#B5B5B5;
+}
+.sidebarArea .zs-text-highlight-color {
+color:#076148;
+}
+.sidebarArea .zs-highlight-box .zs-text-light-color {
+color:#B5B5B5;
+}
+.sidebarArea .zs-highlight-box .zs-text-highlight-color {
+color:#FF5200;
+}
+/*--------------------- THEME SIDEBAR TABS ACCORDION AREA CSS ---------------------*/
+.sidebarArea .zs-tabs ul, .sidebarArea .zs-highlight-box .zs-tabs ul {
+    list-style: none;
+    float: left;
+    padding: 0px;
+    width: 100%;
+    margin: 0;
+    display: none;
+    border-bottom: 1px solid #E3E3E3;
+    border-left: 1px solid #E3E3E3;
+}
+.sidebarArea .zs-tabs ul li, .sidebarArea .zs-highlight-box .zs-tabs ul li {
+    margin: 0px;
+    float: left;
+    padding: 0px;
+}
+.sidebarArea .zs-tabs ul li div, .sidebarArea .zs-highlight-box .zs-tabs ul li div {
+    background: #EBEBEB;
+    padding: 0 25px;
+    color: #7D7D7D;
+    position: relative;
+    margin: 0 0 -1px;
+    line-height: 3;
+    display: block;
+    cursor: pointer;
+    border-right: 1px solid #E3E3E3;
+    border-top: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+}
+.sidebarArea .zs-tabs ul li:hover div, .sidebarArea .zs-highlight-box .zs-tabs ul li:hover div {
+    background: #076148;
+    color: #ffffff;
+}
+.sidebarArea .zs-tabs ul li.selected div, .sidebarArea .zs-highlight-box .zs-tabs ul li.selected div {
+    background: #ffffff;
+    color: #076148;
+    border-bottom: 1px solid #ffffff;
+}
+.sidebarArea .zs-tabs-accordion-content, .sidebarArea .zs-highlight-box .zs-tabs-accordion-content {
+    clear: both;
+    border: 1px solid #E3E3E3;
+    padding: 15px;
+    display: none;
+    color: #7D7D7D;
+    border-top: 0px;
+    background: #ffffff;
+    margin-bottom: 3px;
+    min-height: 70px;
+    height: auto !important;
+    height: 70px;
+}
+.sidebarArea .zs-accordion, .sidebarArea .zs-highlight-box .zs-accordion {
+    background: #EBEBEB;
+    color: #7D7D7D;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #e3e3e3;
+    margin-bottom: 3px;
+    display: block;
+}
+.sidebarArea .zs-accordion.selected, .sidebarArea .zs-highlight-box .zs-accordion.selected {
+    background: #076148;
+    color: #FFFFFF;
+    border: 0px;
+    margin-bottom: 0;
+}
+/*---------------------------------- THEME SIDEBAR AREA HIGHLIGHT TABS ACCORDION AREA CSS START ------------------------------------*/
+.sidebarArea .zs-highlight-box .zs-tabs-accordion-content {
+    padding: 10px;
+}
+.sidebarArea .zs-highlight-box .zs-tabs-accordion-content h1, .sidebarArea .zs-highlight-box .zs-tabs-accordion-content h2, .sidebarArea .zs-highlight-box .zs-tabs-accordion-content h3, .sidebarArea .zs-highlight-box .zs-tabs-accordion-content h4, .sidebarArea .zs-highlight-box .zs-tabs-accordion-content h5, .sidebarArea .zs-highlight-box .zs-tabs-accordion-content h6 {
+    color: #076148;
+}
+.sidebarArea .zs-highlight-box .zs-tabs-accordion-content a, .sidebarArea .zs-highlight-box .zs-tabs-accordion-content a:hover {
+    color: #ff9328;
+}
+.sidebarArea .zs-highlight-box .zs-tabs-accordion-content hr {
+    border-top-color: #D5D5D5;
+}
+.sidebarArea .zs-highlight-box .zs-tabs-accordion-content th {
+    background: #ebf5e0;
+    border-color: #d7eabf;
+    color: #076148;
+}
+.sidebarArea .zs-highlight-box .zs-tabs-accordion-content td {
+    background: #ffffff;
+    border-color: #d7eabf;
+    color: #5c5c5c;
+}
+.sidebarArea .zs-highlight-box .zs-tabs-accordion-content form li span input[type="text"], .sidebarArea .zs-highlight-box .zs-tabs-accordion-content form li span textarea, .sidebarArea .zs-highlight-box .zs-tabs-accordion-content form li span select {
+    background: #ffffff;
+    border: 1px solid #e4e9dd;
+    color: #5c5c5c;
+    width: 105px;
+}
+.sidebarArea .zs-highlight-box .zs-tabs-accordion-content form li span select {
+    width: 120px;
+}
+.sidebarArea .zs-highlight-box .zs-tabs-accordion-content form li input[type="submit"], .sidebarArea .zs-highlight-box .zs-tabs-accordion-content form li input[type="reset"] {
+    padding: 5px 10px;
+}
+
+/*-----------------------------------  RIGHT AREA CSS -----------------------------------------------*/
+.rightArea {
+    width: 67%;
+    padding-bottom: 40px;
+}
+.rightAreaInner {
+    padding-bottom: 40px;
+}
+.breadcrumb {
+    padding: 15px 0;
+}
+.breadcrumb p {
+    word-wrap: break-word;
+}
+.breadcrumb span {
+    padding: 0 7px;
+}
+/*--------------------------------------------------------- FOOTER AREA CSS -----------------------------------------------------------------------------*/
+.footer {
+ background-color:#076148;
+ background-image:none;
+ background-position:0 0;
+ background-repeat:repeat;
+ background-attachment:scroll;
+ background-size:auto;
+ box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0 transparent inset;
+ -webkit-box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0 transparent inset;
+ -moz-box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0 transparent inset;
+ -o-box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0 transparent inset;
+ border-width:0;
+ border-style:none;
+ border-color:transparent;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+    min-height: 15px;
+    height: auto !important;
+    height: 15px;
+}
+.footerInnr {
+    padding: 40px;
+    overflow: hidden;
+ color:#3F9B81;
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+}
+.footerInnr h1 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:24px;
+ color:#ffffff;
+}
+.footerInnr h2 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:22px;
+ color:#ffffff;
+}
+.footerInnr h3 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:20px;
+ color:#ffffff;
+}
+.footerInnr h4 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:18px;
+ color:#ffffff;
+}
+.footerInnr h5 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:16px;
+ color:#ffffff;
+}
+.footerInnr h6 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:14px;
+ color:#ffffff;
+}
+.footerInnr a {
+ text-decoration:none;
+ color:#FF9328;
+}
+.footerInnr a:hover {
+ text-decoration:none;
+ color:#FF9328;
+}
+.footerInnr form li span input[type=text], .footerInnr form li span textarea, .footerInnr form li span select {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color:#3F9B81;
+    background: #0B5541;
+    border: 1px solid #0E6D53;
+}
+.footerInnr form li input[type=submit], .footerInnr form li input[type=reset] {
+font-family:Arial, Helvetica, sans-serif;
+    border: 1px solid #FFB873;
+    background: #FF9328;
+}
+.footerInnr th {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#104D3C;
+ border-width:1px;
+ border-style:solid;
+ border-color:#164437;
+ color:#3F9B81;
+ padding:6px;
+}
+.footerInnr td {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#FFFFFF;
+ border-width:1px;
+ border-style:solid;
+ border-color:#d7eabf;
+ color:#5c5c5c;
+ padding:6px;
+}
+.footerInnr hr {
+    border-top-color: #3F9B81;
+}
+/*----------------------------------- THEME FOOTER AREA NEWSLETTER CSS -----------------------------------------------*/
+
+.footerInnr h3.newsletter-heading {
+    color:#ffffff;
+}
+.footerInnr .newsletter-desc {
+    color:#3F9B81;
+}
+.footerInnr .newsletter-input-field {
+    color: #3F9B81;
+    background: #0B5541;
+    border: 1px solid #0E6D53;
+}
+.footerInnr .newsletter-form input[type="text"]::-moz-placeholder {
+    color:#3F9B81;
+}
+.footerInnr .newsletter-form  input[type="text"]::-webkit-input-placeholder{
+    color:#3F9B81;
+}
+.footerInnr .newsletter-form  input[type="text"]:-ms-input-placeholder {
+    color:#3F9B81;
+}
+/*----------------------------------- THEME FOOTER AREA HIGHLIGHT BOX CSS -----------------------------------------------*/
+
+.footerInnr .zs-highlight-box {
+ background-color: #0c362a;
+ background-image: none;
+ background-image: none, -moz-linear-gradient(bottom, transparent, transparent);
+ background-image: none, -webkit-linear-gradient(bottom, transparent, transparent);
+ background-image: none, -o-linear-gradient(bottom, transparent, transparent);
+ background-position: top left;
+ background-repeat: no-repeat;
+ box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.17), 0px 0px 0px 2px #103128 inset;
+ -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.17), 0px 0px 0px 2px #103128 inset;
+ -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.17), 0px 0px 0px 2px #103128 inset;
+ -o-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.17), 0px 0px 0px 2px #103128 inset;
+ border-width: 2px;
+ border-style:solid;
+ border-color:#076148;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+ padding: 10px;
+ margin: 10px;
+    min-height: 200px;
+color:#138F6C;
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+}
+.footerInnr .zs-highlight-box h1 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:24px;
+ color:#ffffff;
+}
+.footerInnr .zs-highlight-box h2 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:22px;
+ color:#ffffff;
+}
+.footerInnr .zs-highlight-box h3 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:20px;
+ color:#ffffff;
+}
+.footerInnr .zs-highlight-box h4 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:18px;
+ color:#ffffff;
+}
+.footerInnr .zs-highlight-box h5 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:16px;
+ color:#ffffff;
+}
+.footerInnr .zs-highlight-box h6 {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:14px;
+ color:#ffffff;
+}
+.footerInnr .zs-highlight-box a {
+ text-decoration:none;
+ color:#FF9328;
+}
+.footerInnr .zs-highlight-box a:hover {
+ text-decoration:none;
+ color:#FF9328;
+}
+.footerInnr .zs-highlight-box hr {
+    border-top-color: #164D3D;
+}
+.footerInnr .zs-highlight-box th {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#104D3C;
+ border-width:1px;
+ border-style:solid;
+ border-color:#005E44;
+ color:#138F6C;
+ padding:6px;
+}
+.footerInnr .zs-highlight-box td {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#FFFFFF;
+ border-width:1px;
+ border-style:solid;
+ border-color:#E9E9E9;
+ color:#5c5c5c;
+ padding:6px;
+}
+/*----------------------------------- THEME FOOTER AREA HIGHLIGHT BOX NEWSLETTER CSS -----------------------------------------------*/
+
+.footerInnr .zs-highlight-box h3.newsletter-heading {
+    color:#ffffff;
+}
+.footerInnr .zs-highlight-box .newsletter-desc {
+    color:#138F6C;
+}
+.footerInnr .zs-highlight-box .newsletter-form input[type="text"]::-moz-placeholder {
+    color:#9AC79C;
+}
+.footerInnr .zs-highlight-box .newsletter-form  input[type="text"]::-webkit-input-placeholder{
+    color:#9AC79C;
+}
+.footerInnr .zs-highlight-box .newsletter-form  input[type="text"]:-ms-input-placeholder {
+    color:#9AC79C;
+}
+/*-----------------------------------  TEXT HIGHLIGHT CSS -----------------------------------------------*/
+.footerInnr .zs-text-light-color {
+color:#708553;
+}
+.footerInnr .zs-text-highlight-color {
+color:#ffffff;
+}
+.footerInnr .zs-highlight-box .zs-text-light-color {
+color:#708553;
+}
+.footerInnr .zs-highlight-box .zs-text-highlight-color {
+color:#ffffff;
+}
+/*------------------------ THEME TABS ACCORDION AREA CSS START ------------------------------*/
+.footerInnr .zs-tabs ul, .footerInnr .zs-highlight-box .zs-tabs ul {
+    list-style: none;
+    float: left;
+    padding: 0px;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #166D55;
+    border-left: 1px solid #166D55;
+}
+.footerInnr .zs-tabs ul li, .footerInnr .zs-highlight-box .zs-tabs ul li {
+    margin: 0px;
+    float: left;
+    padding: 0px;
+}
+.footerInnr .zs-tabs ul li div, .footerInnr .zs-highlight-box .zs-tabs ul li div {
+    background: #126D53;
+    padding: 0 25px;
+    color: #ffffff;
+    position: relative;
+    margin: 0 0 -1px;
+    line-height: 3;
+    display: block;
+    cursor: pointer;
+    border-right: 1px solid #1B785E;
+    border-top: 1px solid #1B785E;
+    border-bottom: 1px solid #1B785E;
+}
+.footerInnr .zs-tabs ul li:hover div, .footerInnr .zs-highlight-box .zs-tabs ul li:hover div {
+    background: #ffffff;
+    color: #126D53;
+}
+.footerInnr .zs-tabs ul li.selected div, .footerInnr .zs-highlight-box .zs-tabs ul li.selected div {
+    background: #0a523e;
+    color: #ffffff;
+    border-bottom: 1px solid #0a523e;
+}
+.footerInnr .zs-tabs-accordion-content, .footerInnr .zs-highlight-box .zs-tabs-accordion-content {
+    clear: both;
+    border: 1px solid #166D55;
+    padding: 15px;
+    display: none;
+    color: #7DA99C;
+    border-top: 0px;
+    background: #0A523E;
+    margin-bottom: 3px;
+    min-height: 70px;
+    height: auto !important;
+    height: 70px;
+}
+.footerInnr .zs-accordion, .footerInnr .zs-highlight-box .zs-accordion {
+    background: #126D53;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #2D7863;
+    margin-bottom: 3px;
+    display: none;
+}
+.footerInnr .zs-accordion.selected, .footerInnr .zs-highlight-box .zs-accordion.selected {
+    background: #0A523E;
+    color: #FFFFFF;
+    border-color: #166d55;
+    margin-bottom: 0;
+}
+/*---------------------------------- THEME HIGHLIGHT TABS ACCORDION AREA CSS START ------------------------------------*/
+.footerInnr .zs-highlight-box .zs-tabs-accordion-content h1, .footerInnr .zs-highlight-box .zs-tabs-accordion-content h2, .footerInnr .zs-highlight-box .zs-tabs-accordion-content h3, .footerInnr .zs-highlight-box .zs-tabs-accordion-content h4, .footerInnr .zs-highlight-box .zs-tabs-accordion-content h5, .footerInnr .zs-highlight-box .zs-tabs-accordion-content h6 {
+    color: #FFFFFF;
+}
+.footerInnr .zs-highlight-box .zs-tabs-accordion-content a, .footerInnr .zs-highlight-box .zs-tabs-accordion-content a:hover {
+    color: #ff9328;
+}
+.footerInnr .zs-highlight-box .zs-tabs-accordion-content hr {
+    border-top-color: #166d55;
+}
+.footerInnr .zs-highlight-box .zs-tabs-accordion-content th {
+    background: #104d3c;
+    border-color: #164437;
+    color: #3f9b81;
+}
+.footerInnr .zs-highlight-box .zs-tabs-accordion-content td {
+    background: #ffffff;
+    border-color: #d7eabf;
+    color: #5c5c5c;
+}
+.footerInnr .zs-highlight-box .zs-tabs-accordion-content form li span input[type="text"], .footerInnr .zs-highlight-box .zs-tabs-accordion-content form li span textarea, .footerInnr .zs-highlight-box .zs-tabs-accordion-content form li span select {
+    background: #0b4d3a;
+    border-color: #0e6d53;
+    color: #7da99c;
+}
+/*--------------------------------------------------------- FORM AREA CSS -----------------------------------------------------------------------------*/
+form ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 5px;
+    list-style-image: none;
+}
+form li {
+    overflow: hidden;
+    padding: 10px 0 5px;
+    margin: 0;
+}
+form ul li label, form ul li div {
+    width: auto;
+}
+form ul li label {
+    width: 220px;
+}
+form li span input, form li span label {
+    float: none;
+    width: auto;
+    font-weight: normal;
+    padding: 0;
+    margin: 4px;
+}
+form li div span {
+    display: block;
+}
+form li span input[type=text], form li span textarea, form li span select {
+    width: 210px;
+    border: 1px solid #E4E9DD;
+    background: #ffffff;
+    float: left;
+    padding: 3px;
+    resize: none;
+    margin: 0px;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color:#5c5c5c;
+}
+form li span select {
+    width: 217px;
+}
+form li span textarea {
+    height: 100px;
+    overflow: auto
+}
+form li span button {
+    margin-left: 5px;
+    cursor: pointer;
+}
+form .dateinvoker {
+    background: url(images/datePickerIcn.png) 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    border: none;
+    vertical-align: middle;
+    margin-top: 3px;
+    outline: none;
+    padding: 0;
+}
+form li input[type=submit], form li input[type=reset], button {
+    border: 1px solid #FFA300;
+    background: #FFAB17;
+    padding: 5px 15px;
+    margin-right: 5px;
+    color: #FFEFD3;
+    cursor: pointer;
+ font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+form li input[type=reset] {
+    border: 1px solid #ECECEC;
+    background: #ffffff;
+    color: #BDBDBD;
+}
+/*--------------------------------------------------------- THEME SEARCH BOX AREA CSS -----------------------------------------------------------------------------*/
+.searchContainer {
+    margin: 10px auto;
+    padding: 0;
+    width: 200px;
+}
+.searchbox {
+    width: 200px;
+    height: 25px;
+    position: relative;
+    background: #3a3a3a;
+    border: 1px solid #161616;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 1px 1px 0 #424242 inset;
+    -webkit-box-shadow: 1px 1px 0 #424242 inset;
+    -moz-box-shadow: 1px 1px 0 #424242 inset;
+    -o-box-shadow: 1px 1px 0 #424242 inset;
+    padding: 0;
+}
+.searchbox input[type=text] {
+    background: transparent;
+    width: 150px;
+    height: 24px;
+    border: 0;
+    outline: none;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #878686;
+    padding: 0 10px;
+}
+.searchButtonDiv {
+    border-left: 1px solid #424242;
+    -webkit-box-shadow: -1px 0px 0 #424242;
+    -moz-box-shadow: -1px 0px 0 #2a2a2a;
+    -o-box-shadow: -1px 0px 0 #2a2a2a;
+    box-shadow: -1px 0px 0 #2a2a2a;
+    width: 30px;
+    height: 18px;
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+.searchbox input[type=submit] {
+    background: url(images/searchicon.png) center center no-repeat;
+    width: 26px;
+    height: 20px;
+    border: 0 none;
+    cursor: pointer;
+}
+/* -------------------------------------------------------------  SLIDESHOW AREA CSS ---------------------------------------------------------------------------*/
+.zs-slideshow-right-arrow {
+    background: url(images/zs-slideshow-right-arrow.png) left top no-repeat;
+    cursor: pointer;
+    height: 33px;
+    left: 338px;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: auto;
+    bottom: 0px;
+    transition: opacity 500ms ease 0s;
+    -webkit-transition: opacity 500ms ease 0s;
+    -moz-transition: opacity 500ms ease 0s;
+    -o-transition: opacity 500ms ease 0s;
+    width: 33px;
+    z-index: 150;
+}
+.zs-slideshow-left-arrow {
+    background: url(images/zs-slideshow-left-arrow.png) left top no-repeat;
+    cursor: pointer;
+    height: 33px;
+    right: auto;
+    left: 304px;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: auto;
+    bottom: 0px;
+    transition: opacity 500ms ease 0s;
+    -webkit-transition: opacity 500ms ease 0s;
+    -moz-transition: opacity 500ms ease 0s;
+    -o-transition: opacity 500ms ease 0s;
+    width: 33px;
+    z-index: 150;
+}
+.themeSlideshowOuterContainer {
+    height: 40px;
+    top: 0;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 500ms ease 0s;
+    -webkit-transition: opacity 500ms ease 0s;
+    -moz-transition: opacity 500ms ease 0s;
+    -o-transition: opacity 500ms ease 0s;
+    z-index: 150;
+}
+.themeSlideshowInnerContainer {
+    background: transparent;
+    border-radius: 0;
+    padding: 10px 10px 0px;
+    float: right;
+}
+.zs-slideshow-control-active {
+    background: url(images/zs-slideshow-control-active.png) no-repeat left top;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 0 0 0 6px;
+    width: 10px;
+}
+.zs-slideshow-control {
+    background: url(images/zs-slideshow-control.png) no-repeat left top;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 0 0 0 6px;
+    width: 10px;
+}
+/*-----------------------------------      THEME HIGHLIGHT BOX AREA CSS    -----------------------------------------------*/
+.zs-highlight-box {
+ background-color: #458949;
+ background-image: none;
+ background-image: none, -moz-linear-gradient(bottom, transparent, transparent);
+ background-image: none, -webkit-linear-gradient(bottom, transparent, transparent);
+ background-image: none, -o-linear-gradient(bottom, transparent, transparent);
+ background-position: top left;
+ background-repeat: no-repeat;
+ box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.20), 0px 0px 0px 2px #317c49 inset;
+ -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.20), 0px 0px 0px 2px #317c49 inset;
+ -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.20), 0px 0px 0px 2px #317c49 inset;
+ -o-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.20), 0px 0px 0px 2px #317c49 inset;
+ border-width: 2px;
+ border-style:solid;
+ border-color:#f4f4f4;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+ padding: 10px;
+ margin: 10px;
+    min-height: 200px;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color:#9AC79C;
+}
+.zs-highlight-box h1 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:24px;
+color:#FDF52D;
+}
+.zs-highlight-box h2 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:22px;
+color:#FDF52D;
+}
+.zs-highlight-box h3 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:20px;
+color:#FDF52D;
+}
+.zs-highlight-box h4 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:18px;
+color:#FDF52D;
+}
+.zs-highlight-box h5 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:16px;
+color:#FDF52D;
+}
+.zs-highlight-box h6 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:14px;
+color:#FDF52D;
+}
+.zs-highlight-box a {
+ text-decoration:none;
+color:#FDF52D;
+}
+.zs-highlight-box a:hover {
+text-decoration:none;
+color:#FDF52D;
+}
+.zs-highlight-box hr {
+    border-top-color: #9AC79C;
+}
+.zs-highlight-box th {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#5C9E60;
+ border-width:1px;
+ border-style:solid;
+ border-color:#449449;
+ color:#316134;
+ padding:6px;
+}
+.zs-highlight-box td {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ background:#FFFFFF;
+ border-width:1px;
+ border-style:solid;
+ border-color:#E9E9E9;
+ color:#5c5c5c;
+ padding:6px;
+}
+.zs-highlight-box form li span input[type=text], .zs-highlight-box form li span textarea, .zs-highlight-box form li span select {
+    border-color: #59995D;
+    background: #3C7C40;
+    color: #9AC79C;
+}
+/*----------------------------------- THEME HIGHLIGHT BOX NEWSLETTER CSS -----------------------------------------------*/
+
+.zs-highlight-box h3.newsletter-heading {
+    color:#FDF52D;
+}
+.zs-highlight-box .newsletter-desc {
+    color:#9AC79C;
+}
+.zs-highlight-box .newsletter-input-field {
+    border-color: #59995D;
+    background: #3C7C40;
+    color: #9AC79C;
+}
+.zs-highlight-box .newsletter-form input[type="text"]::-moz-placeholder {
+    color:#9AC79C;
+}
+.zs-highlight-box .newsletter-form  input[type="text"]::-webkit-input-placeholder{
+    color:#9AC79C;
+}
+.zs-highlight-box .newsletter-form  input[type="text"]:-ms-input-placeholder {
+    color:#9AC79C;
+}
+/*-----------------------------------  TEXT HIGHLIGHT CSS -----------------------------------------------*/
+.zs-text-light-color {
+color:#C6C6C6
+}
+.zs-text-highlight-color {
+color:#076148
+}
+.zs-highlight-box .zs-text-light-color {
+color:#C6C6C6
+}
+.zs-highlight-box .zs-text-highlight-color {
+color:#FDF52D
+}
+/*---------------------------------- THEME TABS ACCORDION AREA CSS START ------------------------------------*/
+.zs-tabs ul, .zs-highlight-box .zs-tabs ul {
+    list-style: none;
+    float: left;
+    padding: 0px;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #E3E3E3;
+    border-left: 1px solid #E3E3E3;
+}
+.zs-tabs ul li, .zs-highlight-box .zs-tabs ul li {
+    margin: 0px;
+    float: left;
+    padding: 0px;
+}
+.zs-tabs ul li div, .zs-highlight-box .zs-tabs ul li div {
+    background: #F4F4F4;
+    padding: 0 25px;
+    color: #7D7D7D;
+    position: relative;
+    margin: 0 0 -1px;
+    line-height: 3;
+    display: block;
+    cursor: pointer;
+    border-right: 1px solid #E3E3E3;
+    border-top: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+}
+.zs-tabs ul li:hover div, .zs-highlight-box .zs-tabs ul li:hover div {
+    background: #076148;
+    color: #ffffff;
+}
+.zs-tabs ul li.selected div, .zs-highlight-box .zs-tabs ul li.selected div {
+    background: #ffffff;
+    color: #076148;
+    border-bottom: 1px solid #ffffff;
+}
+.zs-tabs-accordion-content, .zs-highlight-box .zs-tabs-accordion-content {
+    clear: both;
+    border: 1px solid #E3E3E3;
+    padding: 15px;
+    display: none;
+    color: #7D7D7D;
+    border-top: 0px;
+    background: #ffffff;
+    margin-bottom: 3px;
+    min-height: 70px;
+    height: auto !important;
+    height: 70px;
+}
+.zs-accordion, .zs-highlight-box .zs-accordion {
+    background: #f4f4f4;
+    color: #7D7D7D;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #e3e3e3;
+    margin-bottom: 3px;
+    display: none;
+}
+.zs-accordion.selected, .zs-highlight-box .zs-accordion.selected {
+    background: #076148;
+    color: #FFFFFF;
+    border: 0px;
+    margin-bottom: 0;
+}
+/*---------------------------------- THEME HIGHLIGHT TABS ACCORDION AREA CSS START ------------------------------------*/
+.zs-highlight-box .zs-tabs-accordion-content h1, .zs-highlight-box .zs-tabs-accordion-content h2, .zs-highlight-box .zs-tabs-accordion-content h3, .zs-highlight-box .zs-tabs-accordion-content h4, .zs-highlight-box .zs-tabs-accordion-content h5, .zs-highlight-box .zs-tabs-accordion-content h6 {
+    color: #076148;
+}
+.zs-highlight-box .zs-tabs-accordion-content a, .zs-highlight-box .zs-tabs-accordion-content a:hover {
+    color: #ff9328;
+}
+.zs-highlight-box .zs-tabs-accordion-content hr {
+    border-top-color: #e8e8e8;
+}
+.zs-highlight-box .zs-tabs-accordion-content th {
+    background: #ebf5e0;
+    border-color: #d7eabf;
+    color: #076148;
+}
+.zs-highlight-box .zs-tabs-accordion-content td {
+    background: #ffffff;
+    border-color: #d7eabf;
+    color: #5c5c5c;
+}
+.zs-highlight-box .zs-tabs-accordion-content form li span input[type="text"], .zs-highlight-box .zs-tabs-accordion-content form li span textarea, .zs-highlight-box .zs-tabs-accordion-content form li span select {
+    background: #ffffff;
+    border: 1px solid #e4e9dd;
+    color: #5c5c5c;
+}
+.zs-highlight-box .zs-tabs-accordion-content form ul li label {
+    width: 165px;
+}
+/***************************** START SOCIAL ICONS SPRITE *****************************/
+.socialiconContainer {
+    text-align: center;
+}
+.zs-socialicon-email, .zs-socialicon-facebook, .zs-socialicon-flickr, .zs-socialicon-googleplus, .zs-socialicon-linkedin, .zs-socialicon-pinterest, .zs-socialicon-rss, .zs-socialicon-twitter, .zs-socialicon-youtube, .zs-socialicon-medium, .zs-socialicon-instagram {
+    background: url('images/zs-socialicon-sprite.png') no-repeat top left;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    padding: 0 3px;
+    margin: 10px 0;
+}
+.zs-socialicon-email {
+    background-position: 0 -0px;
+}
+.zs-socialicon-facebook {
+    background-position: 0 -24px;
+}
+.zs-socialicon-flickr {
+    background-position: 0 -48px;
+}
+.zs-socialicon-googleplus {
+    background-position: 0 -72px;
+}
+.zs-socialicon-linkedin {
+    background-position: 0 -96px;
+}
+.zs-socialicon-pinterest {
+    background-position: 0 -120px;
+}
+.zs-socialicon-rss {
+    background-position: 0 -144px;
+}
+.zs-socialicon-twitter {
+    background-position: 0 -168px;
+}
+.zs-socialicon-youtube {
+    background-position: 0 -192px;
+}
+.zs-socialicon-medium {
+    background-position: 0 -216px;
+}
+.zs-socialicon-instagram {
+    background-position: 0 -240px;
+}
+/*****************************   END: SOCIAL ICONS SPRITE *****************************/
+/*----------------------------------- THEME NEWSLETTER CSS -----------------------------------------------*/
+.newsletter-container {
+background: transparent;
+    padding: 10px
+}
+h3.newsletter-heading {
+    margin-bottom: 10px;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 20px;
+color: #076148;
+}
+.newsletter-desc {
+    margin-bottom: 25px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: #5C5C5C;
+}
+.newsletter-input-field {
+background: #ffffff;
+border-width: 1px;
+border-color: #E4E9DD;
+color:#5C5C5C;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+    border-style: solid;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    vertical-align:top;
+}
+button.newsletter-button {
+background: #ffab17;
+border-width: 0;
+border-color: transparent;
+color:#ffffff;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+    border-style: solid;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+.newsletter-layout-1 .newsletter-form, .newsletter-layout-2 .newsletter-form {
+    margin: 0 auto;
+    text-align: center;
+}
+.newsletter-layout-3 .newsletter-form {
+    width: 200px;
+    margin: 0 auto;
+    text-align: right;
+}
+.newsletter-layout-3 button {
+    text-align: right;
+}
+.newsletter-form input[type="text"]::-moz-placeholder {
+    color:#969696;
+  font-size:90%;
+  line-height:normal;
+}
+.newsletter-form  input[type="text"]::-webkit-input-placeholder{
+    color:#969696;
+  font-size:85%;
+  line-height:normal;
+}
+.newsletter-form  input[type="text"]:-ms-input-placeholder {
+    color:#969696;
+  font-size:90%;
+  line-height:normal;
+}
+/*----------------------------------- MEMBERSHIP PORTAL AREA CSS  -----------------------------------------------*/
+.mp-container {
+    height: 35px;
+    border-bottom:1px solid #353535;
+}
+.member-signin {
+    text-align:center;
+    padding:0 10px;
+}
+.member-signin > ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    text-align:right;
+}
+.member-signin li {
+    display: inline-block;
+    line-height: 35px;
+    margin-left: 20px;
+    padding: 0;
+    position:relative;
+}
+.member-signin li:first-child {
+    width: 65%;
+}
+.member-signin li a {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    text-decoration:none;
+    color:#FFFFFF;
+    display:block;
+    overflow: hidden;
+    text-align: right;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.member-signin li a:hover {
+    text-decoration:none;
+    color:#FFFFFF;
+}
+.member-signin li:first-child {
+    margin-left: 0;
+}
+.member-signin li:last-child:before {
+    color:#FFFFFF;
+    content: "|";
+    position: absolute;
+    top: 0;
+    left:-10px;
+} 
