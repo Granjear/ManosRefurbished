@@ -1,50 +1,46 @@
 ---
 layout: page
-title: Manos a la Tierra - Convenios
+title: Convenios y Documentación
 keywords: ""
-description: ""
+description: "Estatuto, convenios y documentación legal de la ONG."
 ---
 
-<div id="elm_ConveniosTabs" class="zpelement-wrapper zpTabs">
-    <div class="zs-tabs">
-    <ul>
-        <li id="elm_tab_estatuto" class="zs-tabs-accordion-header selected" name="tab1" onclick="fnChangeTab(event)"> <div> Estatuto </div> </li>
-        <li id="elm_tab_convenio_asana" class="zs-tabs-accordion-header" name="tab2" onclick="fnChangeTab(event)"> <div> Convenio ASANA </div> </li>
-        <li id="elm_tab_documentacion_nic" class="zs-tabs-accordion-header" name="tab3" onclick="fnChangeTab(event)"> <div> Documentación</div> </li>
-    </ul>
+<div style="max-width: 900px; margin: 0 auto; padding-top: var(--space-md);">
+
+  <details style="margin-bottom: var(--space-md); border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); padding: var(--space-sm);" open>
+    <summary style="font-size: 1.25em; font-weight: 600; cursor: pointer; padding: var(--space-sm); color: var(--primary-dark);">Estatuto</summary>
+    <div style="padding: var(--space-sm); margin-top: var(--space-sm); border-top: 1px solid var(--border);">
+      <embed src="files/convenios/Estatuto.pdf" type="application/pdf" width="100%" height="800px" style="border-radius: var(--radius-sm);" />
     </div>
+  </details>
 
-<div class="zs-accordion  selected" name="tab1" onclick="fnChangeTab(event)">Estatuto<em></em></div>
-<div class="zs-tabs-accordion-content" id="pos_tab_estatuto" name="content1" style="display:block" markdown="1">
+  <details style="margin-bottom: var(--space-md); border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); padding: var(--space-sm);">
+    <summary style="font-size: 1.25em; font-weight: 600; cursor: pointer; padding: var(--space-sm); color: var(--primary-dark);">Convenio ASANA</summary>
+    <div style="padding: var(--space-sm); margin-top: var(--space-sm); border-top: 1px solid var(--border);">
+      <embed src="files/convenios/Convenio ASANA.pdf" type="application/pdf" width="100%" height="800px" style="border-radius: var(--radius-sm);" />
+    </div>
+  </details>
 
-<embed src="files/convenios/Estatuto.pdf" type="application/pdf" width="100%" height="800px" />
+  <details style="margin-bottom: var(--space-md); border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); padding: var(--space-sm);">
+    <summary style="font-size: 1.25em; font-weight: 600; cursor: pointer; padding: var(--space-sm); color: var(--primary-dark);">Otra Documentación (NIC y CUIT)</summary>
+    <div style="padding: var(--space-sm); margin-top: var(--space-sm); border-top: 1px solid var(--border);">
+      
+      <div style="margin-bottom: var(--space-md);">
+          <h4 style="margin-bottom: var(--space-xs);">Registro NIC</h4>
+          <embed src="files/convenios/Registro NIC.pdf" type="application/pdf" width="100%" height="400px" style="border-radius: var(--radius-sm);" />
+      </div>
 
-</div>
+      <div style="margin-bottom: var(--space-md);">
+          <h4 style="margin-bottom: var(--space-xs);">CUIT</h4>
+          <embed src="files/convenios/CUIT NIC.pdf" type="application/pdf" width="100%" height="400px" style="border-radius: var(--radius-sm);" />
+      </div>
 
-<div class="zs-accordion" name="tab2" onclick="fnChangeTab(event)">Convenio ASANA<em></em></div>
-<div class="zs-tabs-accordion-content" id="pos_tab_convenio_asana" name="content2" style="display:none" markdown="1">
+      <div style="margin-bottom: var(--space-md);">
+          <h4 style="margin-bottom: var(--space-xs);">Carátula Expediente NIC</h4>
+          <embed src="files/convenios/Caratula Expediente NIC.pdf" type="application/pdf" width="100%" height="400px" style="border-radius: var(--radius-sm);" />
+      </div>
 
-<embed src="files/convenios/Convenio ASANA.pdf" type="application/pdf" width="100%" height="800px" />
+    </div>
+  </details>
 
-</div>
-
-<div class="zs-accordion" name="tab3" onclick="fnChangeTab(event)">Documentación<em></em></div>
-<div class="zs-tabs-accordion-content" id="pos_tab_documentacion_nic" name="content3" style="display:none" markdown="1">
-
-<div style="margin-bottom: 2em;">
-    <h4>Registro NIC</h4>
-    <embed src="files/convenios/Registro NIC.pdf" type="application/pdf" width="100%" height="400px" />
-</div>
-
-<div style="margin-bottom: 2em;">
-    <h4>CUIT</h4>
-    <embed src="files/convenios/CUIT NIC.pdf" type="application/pdf" width="100%" height="400px" />
-</div>
-
-<div style="margin-bottom: 2em;">
-    <h4>Caratula Expediente NIC</h4>
-    <embed src="files/convenios/Caratula Expediente NIC.pdf" type="application/pdf" width="100%" height="400px" />
-</div>
-
-</div>
 </div>

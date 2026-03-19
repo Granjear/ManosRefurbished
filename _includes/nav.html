@@ -1,16 +1,9 @@
-<div id="navigation">
-<ul id="nav-top" data-navorientation=vertical>
-    <li {% if page.url == "/home.html" or page.url == "/" %}class="selected"{% endif %}><a target="_self" href="home.html"><span>Home</span><em></em></a></li>
-    <li {% if page.url == "/objeto-social1.html" %}class="selected"{% endif %}><a target="_self" href="objeto-social1.html"><span>Nuestro Proyecto</span><em></em></a></li>
-    <li {% if page.url == "/actividad-actual.html" %}class="selected"{% endif %}><a target="_self" href="actividad-actual.html"><span>Actividad Actual</span><em></em></a></li>
-    <li {% if page.url == "/objeto-social.html" %}class="selected"{% endif %}><a target="_self" href="objeto-social.html"><span>Quienes Somos</span><em></em></a></li>
-    <li {% if page.url == "/convenios.html" %}class="selected"{% endif %}><a target="_self" href="convenios.html"><span>Convenios</span><em></em></a></li>
-    <li {% if page.url == "/contact.html" %}class="selected"{% endif %}><a target="_self" href="contact.html"><span>Contacto</span><em></em></a></li>
-    <li {% if page.url == "/web-amigas.html" %}class="selected"{% endif %}><a target="_self" href="web-amigas.html"><span>web amigas</span><em></em></a></li>
+<ul>
+    <li class="{% if page.url == '/home.html' or page.url == '/' %}selected{% endif %}"><a href="{{ site.baseurl }}/home.html">Home</a></li>
+    <li class="{% if page.url == '/objeto-social1.html' %}selected{% endif %}"><a href="{{ site.baseurl }}/objeto-social1.html">Nuestro Proyecto</a></li>
+    <li class="{% if page.url == '/actividad-actual.html' %}selected{% endif %}"><a href="{{ site.baseurl }}/actividad-actual.html">Actividad Actual</a></li>
+    <li class="{% if page.url == '/objeto-social.html' %}selected{% endif %}"><a href="{{ site.baseurl }}/objeto-social.html">Quienes Somos</a></li>
+    <li class="{% if page.url == '/convenios.html' %}selected{% endif %}"><a href="{{ site.baseurl }}/convenios.html">Convenios</a></li>
+    <li class="{% if page.url == '/contact.html' %}selected{% endif %}"><a href="{{ site.baseurl }}/contact.html">Contacto</a></li>
+    <li class="{% if page.url == '/web-amigas.html' %}selected{% endif %}"><a href="{{ site.baseurl }}/web-amigas.html">Web Amigas</a></li>
 </ul>
-
-<div id="childPageParent" style="position:relative">
-    <div id="childPage">
-    </div>
-</div>
-</div>

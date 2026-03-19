@@ -1,7 +1,51 @@
 <!DOCTYPE html>
-<html>
-  <body>
-     {{ content }}
-  </body>
-</html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.name }}</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}" />{% endif %}
+    {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="{{ site.baseurl }}/" class="site-logo">
+                <img src="{{ site.baseurl }}/files/logo-lw-scaled.png" alt="Manos a la Tierra Logo">
+                <span>Manos a la Tierra</span>
+            </a>
+            <nav class="main-nav">
+                {% include nav.html %}
+            </nav>
+        </div>
+    </header>
 
+    <main class="main-content">
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Manos a la Tierra</h3>
+                    <p>Rediseñando nuestro futuro con acciones sostenibles.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><a href="mailto:info@manosalatierra.org">info@manosalatierra.org</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; {{ site.time | date: '%Y' }} Manos a la Tierra. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

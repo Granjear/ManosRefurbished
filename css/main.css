@@ -1,0 +1,334 @@
+/* 
+   Manos a la Tierra - Modern Design System 
+   Inspired by plantarse.org
+*/
+
+:root {
+  /* Colors */
+  --primary: #2e7d32;      /* Deep green */
+  --primary-light: #60ad5e;
+  --primary-dark: #005005;
+  --secondary: #ff9328;    /* Orange/accent */
+  --background: #f9fbf9;   /* Soft off-white */
+  --surface: #ffffff;
+  --text-main: #333333;
+  --text-muted: #666666;
+  --border: #e0e0e0;
+  
+  /* Typography */
+  --font-family: 'Inter', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-heading: 'Outfit', 'Inter', sans-serif;
+  
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+  
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-main);
+  background-color: var(--background);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--primary-dark);
+  line-height: 1.2;
+  margin-bottom: var(--space-sm);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Structure */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-sm);
+}
+
+/* Header */
+.site-header {
+  background-color: var(--surface);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: var(--space-sm) 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.site-logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Navigation */
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--space-sm);
+}
+
+.main-nav a {
+  color: var(--text-main);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.main-nav a:hover,
+.main-nav .selected a {
+  background-color: var(--primary-light);
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  background-color: var(--primary);
+  color: white;
+  padding: var(--space-xl) 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(46,125,50,0.9), rgba(0,80,5,0.7));
+  z-index: 1;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-md);
+}
+
+/* Main Content */
+.main-content {
+  padding: var(--space-lg) 0;
+  min-height: 60vh;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.page-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--secondary);
+  margin: var(--space-sm) auto 0;
+  border-radius: var(--radius-sm);
+}
+
+/* Cards & Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-md) 0;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: var(--space-md);
+}
+
+.card h3 {
+  margin-bottom: var(--space-sm);
+  color: var(--primary-dark);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary);
+  color: white;
+  border-radius: var(--radius-xl);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 6px rgba(46,125,50,0.3);
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(46,125,50,0.4);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  box-shadow: 0 4px 6px rgba(255,147,40,0.3);
+}
+
+.btn-secondary:hover {
+  background-color: #e67a1c;
+  box-shadow: 0 6px 12px rgba(255,147,40,0.4);
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--primary-dark);
+  color: #fff;
+  padding: var(--space-lg) 0 var(--space-sm);
+  margin-top: auto;
+}
+
+.site-footer a {
+  color: var(--primary-light);
+}
+
+.site-footer a:hover {
+  color: var(--secondary);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.footer-section h3 {
+  color: white;
+  margin-bottom: var(--space-sm);
+  position: relative;
+  padding-bottom: var(--space-xs);
+}
+
+.footer-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 40px; height: 3px;
+  background-color: var(--secondary);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--space-sm);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-header .container {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  
+  .main-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
